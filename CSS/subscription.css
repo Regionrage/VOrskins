@@ -1,0 +1,345 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Vollkorn";
+    src: url(../Fonts/Vollkorn-Regular.ttf);
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins';
+}
+
+nav{
+    top: 0;
+    z-index: 100;
+    position: sticky;
+    position: -webkit-sticky;
+    height: 95px;
+}
+
+.navbaratas{
+    background-color: #424429;
+    height: 57px;
+}
+
+.navbaratas .logo{
+    color: #FFF172;
+    font-family: "Vollkorn";
+    font-size: 48px;
+    margin-left: 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbarbawah{
+    background-color: rgba(227, 252, 191, 0.85);
+    height: 38px;
+    overflow: none;
+}
+
+.navbarbawah ul li a{
+    float: left;
+}
+
+.navbarbawah a{
+    color: #14C38E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-left: 1.6vw;
+}
+
+.navbarbawah .curr{
+    font-weight: 700;
+}
+
+.navbarbawah ul{
+    float: right;
+    width: 45%;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.navbarbawah .menu{
+    transition: 0.2s;
+}
+
+.navbarbawah .menu:hover{
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.panel1 {
+    height: 80vw;
+}
+
+.background{
+    margin-top: 5vw;
+    margin-left: 9.5vw;
+    height: 75vw;
+    width: 80vw;
+
+    background-color: #B8F1B0;
+    border-radius: 20px;
+}
+
+.title{
+    margin-left: 6vw;
+    padding-top: 3vw;
+}
+
+.titlekiri{
+    font-size: 3.5vw;
+    font-weight: 600;
+
+    float: left;
+
+    color: #4F1616;
+}
+
+.titlekanan{
+    font-size: 3.5vw;
+    font-weight: 600;
+
+    margin-left: 0.5vw;
+    float: left;
+    
+    color: #A66300;
+}
+
+.simbol{
+    font-size: 3.5vw;
+    font-weight: 600;
+
+    color: #4F1616;
+}
+
+.background .desc{
+    font-size: 1.8vw;
+    font-weight: 600;
+    
+    width: 60vw;
+    margin-left: 8vw;
+
+    color: black;
+}
+
+
+
+.form{
+    margin-left: 7.5vw;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.form label{
+    margin-left: 0.5vw;
+    margin-bottom: -2w;
+}
+
+
+
+.form .labelrad{
+    text-align: left;
+}
+
+.form input{
+    border-radius: 5px;
+    border: none;
+
+    width: 64vw;
+ 
+    font-size: 2vw;
+}
+
+.form input[type=radio]{
+    height: 1.2vw;
+    width: 1.2vw;
+}
+
+.form input[type=checkbox]{
+    height: 2vw;
+    width: 2vw;
+}
+
+.form input::placeholder{
+    font-size: 1.5vw;    
+    font-weight: 600;     
+    font-family: "Poppins";  
+
+    padding-left: 10px;
+    align-items: center;
+}
+
+.prefe{
+    border-radius: 5px;
+    border: none;
+}
+
+.prefe label{
+    font-size: 1.7vw;
+    
+    margin-left: -0.2vw;
+}
+
+.prefe input{
+    border: #000000 1vw solid;
+}
+
+.form #cskin{
+    margin-left: 0.7vw;
+}
+
+.form #cboth{
+    margin-left: 0.7vw;
+}
+
+
+.acc{
+    margin-top: 1vw;
+}
+
+.acc input{
+    float: left;
+    margin-left: 10vw;
+}
+
+.acc p{
+    float: left;
+    font-size: 1.7vw;
+}
+
+.acc #topp{
+    margin-top: -1.5vw;
+    margin-left: 1vw;
+}
+
+.acc #botp{
+    margin-top: -2vw;
+    margin-left: 12.8vw;
+}
+
+.btn{
+    height: 10px;
+    width: 90%;
+
+    /* align-items: center; */
+    text-align: center;
+}
+
+.btn button {
+    height: 4vw;
+    width: 14vw;
+    margin-top: 3vw;
+    
+    font-size: 2vw;
+    font-weight: 600;
+    
+    border: #A66300 0.3vw solid ;
+    border-radius: 50px;
+
+    background-color: rgba(255, 255, 255, 0);
+    color: #A66300;
+
+    transition: 0.2s;
+}
+
+.btn button:hover{
+    color: #B8F1B0;
+    background-color: #A66300;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.errormsg{
+    width: 50%;
+    float: right;
+    margin-top: 1vw;
+
+    font-size: 1.3vw;
+    
+    color: red;
+}
+
+#erroracc{
+    margin-top: -3vw;
+    width: 82%;
+}
+
+
+.footer{
+    height: 190px;
+    background-color: #424429;
+    text-align: center;
+}
+
+.footer img{
+    width: 45px;
+    height: 45px;
+}
+
+.footer .icon .cut{
+    padding-right: 11px;
+    margin-right: -11px;
+
+    display: inline-block;
+    line-height: 5px;
+
+    border-right: 1px #000000 solid;
+
+}
+
+.footer .icon{
+    padding-top: 30px;
+    margin-bottom: -30px;
+
+}
+
+.footer .icon a{
+    margin-left: 20px;
+}
+
+.footer .copyright{
+    font-size: 24px;
+    font-family: 'Vollkorn';
+    color: #FFF27F;
+    padding-top: 80px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 800px) {
+    .navbarbawah ul{
+        float: right;
+        width: 85%;
+        font-size: 24px;
+        list-style-type: none;
+    }
+
+    .navbarbawah a{
+        margin-left: 30px;
+    }
+
+
+
+}

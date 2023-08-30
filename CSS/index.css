@@ -1,0 +1,560 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Vollkorn";
+    src: url(../Fonts/Vollkorn-Regular.ttf);
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins';
+}
+
+nav{
+    top: 0;
+    z-index: 100;
+    position: sticky;
+    position: -webkit-sticky;
+    height: 95px;
+}
+
+.navbaratas{
+    background-color: #424429;
+    height: 57px;
+}
+
+.navbaratas .logo{
+    color: #FFF172;
+    font-family: "Vollkorn";
+    font-size: 48px;
+    margin-left: 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbarbawah{
+    background-color: rgba(227, 252, 191, 0.85);
+    height: 38px;
+    overflow: none;
+}
+
+.navbarbawah ul li a{
+    float: left;
+}
+
+.navbarbawah a{
+    color: #14C38E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-left: 1.6vw;
+}
+
+.navbarbawah .curr{
+    font-weight: 700;
+}
+
+.navbarbawah ul{
+    float: right;
+    width: 45%;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.navbarbawah .menu{
+    transition: 0.2s;
+}
+
+.navbarbawah .menu:hover{
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.panel1{
+    margin-top: -38px;
+    background-image: url(../Images/Home/OurProducts.png);
+    height: 690px;
+    background-position: center;
+    background-size: cover;
+    z-index: -10;
+}
+
+.panel1 .glass{
+    height: 690px;
+    z-index: 10;
+    background-color: rgba(37, 37, 37, 0.50);;
+}
+
+.panel1 .glass .text{
+    text-align: center;
+    align-items: center;
+    font-size: 32px;
+    padding-top: 200px;
+    color: white;
+    line-height: 60px;
+}
+
+.panel1 .glass .text #t2{
+    font-weight: 700;
+}
+
+.panel1 .glass .text #t3{
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.panel1 .glass .text a{
+    padding: 5px 15px 5px 15px;
+    color: white;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+.panel1 .glass .text a{
+    color: white;
+    border: 5px solid white;
+    transition: 0.5s;
+}
+
+.panel1 .glass .text a:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 5px solid white;
+    transition: all 0.5s;
+}
+    
+
+
+.panel2{
+    height: 30vw;
+    border-top: 1px solid #000000;
+}
+
+
+.movban .banner{
+    /* margin-top: -100px; */
+    display: block;
+    width: 101vw;
+    height: auto;
+
+}
+
+.movban{
+    outline: 10px#DA1212;
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+}
+
+.ban{
+    list-style: none;
+    display: flex;
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide{
+    15%{
+        transform: translateX(0);
+    }
+    20%, 45%{
+        transform: translateX(-101vw);
+    }
+    50%, 75%{
+        transform: translateX(-202vw);
+    }
+    80%, 90%{
+        transform: translateX(0);
+    }
+}
+
+#banner1{
+    height: 30vw;
+    background-color: #B8F1B0;
+}
+#banner2{
+    height: 30vw;
+    background-color: #14C38E;
+}
+#banner3{
+    height: 30vw;
+    background-color: #B8F1B0;
+}
+
+.bantitle{
+    font-size: 2.5vw;
+    color: #008334;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bandesc{
+    font-size: 1.5vw;
+}
+
+
+.banner1kiri{
+    float: left;
+    width: 40%;
+}
+
+.banner1kiri p{
+    margin-left: 3vw;
+}
+
+.banner1kiri #title1{
+    width: 35vw;
+
+    margin-top: 4vw;
+}
+
+.banner1kiri #desc1{
+    width: 33vw;
+
+    margin-top: 3vw;
+}
+
+.banner1kanan{
+    float: right;
+    width: 60%;
+}
+
+.banner1kanan img{
+    float: right;
+    width: 62vw;
+    height: 30vw;
+}
+
+
+.banner2kiri{
+    float: left;
+    width: 60%;
+}
+
+.banner2kiri img{
+    float: left;
+    width: 58vw;
+    height: 30vw;
+}
+
+.banner2kanan{
+    float: right;
+    width: 40%;
+}
+
+.banner2kanan p{
+    float: left;
+
+    margin-left: 2vw;
+}
+
+.banner2kanan #title2{
+    width: 35vw;
+
+    color: white;
+
+    margin-top: 4vw;
+}
+
+.banner2kanan #desc2{
+    width: 34vw;
+    font-size: 1.3vw;
+
+    margin-top: 2vw;
+}
+
+
+.banner3kiri{
+    float: left;
+    width: 40%;
+}
+
+.banner3kiri p{
+    margin-left: 4vw;
+}
+
+.banner3kiri #title3{
+    width: 35vw;
+
+    margin-top: 4vw;
+}
+
+.banner3kiri #desc3{
+    width: 33vw;
+
+    margin-top: 2vw;
+}
+
+.banner3kanan{
+    float: right;
+    width: 50%;
+}
+
+.banner3kanan img{
+    float: right;
+    width: 56vw;
+    height: 30vw;
+}
+
+
+.panel3{
+    height: 35vw;
+    border-top: 1px solid #000000;
+}
+
+.panel3kiri{
+    float: left;
+    width: 40%;
+}
+
+.panel3kiri #type{
+    padding-left: 1vw;
+    font-size: 40px;
+    background-color: #008334;
+    width: 14.5vw;
+    color: white;
+}
+
+.panel3kiri img{
+    height: 25vw;
+    width: 25vw;
+    margin-left: 10vw;
+    margin-top: 3vw;
+
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.panel3kanan{
+    float: right;
+    width: 57.5%;
+}
+
+.panel3kanan #title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 3vw;
+    margin-top: 8vw;
+}
+
+.panel3kanan #desc{
+    font-size: 25px;
+    width: 48vw;
+    margin-left: 5vw;
+    margin-top: 0.5vw;
+}
+
+.panel3kanan #price{
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: 1vw;
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+}
+
+.panel3kanan a{
+    font-size: 32px;
+    font-weight: 600;
+    color: #008334;
+    margin-left: 16vw;
+    padding: 5px 60px 5px 60px;
+    border: 1px solid #000000;
+    transition: 0.3s;
+}
+
+.panel3kanan a:hover{
+    background-color: #008334;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.panel4{
+    height: 35vw;
+    border-top: 1px solid #000000;
+}
+
+.panel4kiri{
+    float: left;
+    width: 40%;
+}
+
+.panel4kiri #type{
+    padding-left: 1vw;
+    font-size: 40px;
+    background-color: #008334;
+    width: 20vw;
+    color: white;
+}
+
+.panel4kiri img{
+    height: 25vw;
+    width: 25vw;
+    margin-left: 10vw;
+    margin-top: 3vw;
+
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.panel4kanan{
+    float: right;
+    width: 57.5%;
+}
+
+.panel4kanan #title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 3vw;
+    margin-top: 8vw;
+}
+
+.panel4kanan #desc{
+    font-size: 25px;
+    width: 48vw;
+    margin-left: 5vw;
+    margin-top: 0.5vw;
+}
+
+.panel4kanan #price{
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: 1vw;
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+}
+
+.panel4kanan a{
+    font-size: 32px;
+    font-weight: 600;
+    color: #008334;
+    margin-left: 16vw;
+    padding: 5px 60px 5px 60px;
+    border: 1px solid black;
+}
+
+.panel4kanan a:hover{
+    background-color: #008334;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.footer{
+    height: 190px;
+    background-color: #424429;
+    text-align: center;
+}
+
+.footer img{
+    width: 45px;
+    height: 45px;
+}
+
+.footer .icon .cut{
+    padding-right: 11px;
+    margin-right: -11px;
+
+    display: inline-block;
+    line-height: 5px;
+
+    border-right: 1px #000000 solid;
+
+}
+
+.footer .icon{
+    padding-top: 30px;
+    margin-bottom: -30px;
+
+}
+
+.footer .icon a{
+    margin-left: 20px;
+}
+
+.footer .copyright{
+    font-size: 24px;
+    font-family: 'Vollkorn';
+    color: #FFF27F;
+    padding-top: 80px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width : 800px) {
+    .navbarbawah ul{
+        float: right;
+        width: 85%;
+        font-size: 24px;
+        list-style-type: none;
+    }
+
+    .navbarbawah a{
+        margin-left: 30px;
+    }
+
+    .panel3{
+        height: 500px;
+    }
+
+    .panel3 #type{
+        width: 28vw;
+    }
+
+    .panel3kiri img{
+        margin-top: 5vw;
+        margin-left: 5vw;
+        height: 30vw;
+        width: 30vw;
+    }
+
+    .panel3kanan #price{
+        margin-bottom: 4vw;
+    }
+
+    .panel3kanan a{
+        margin-left: -10vw;
+    }
+
+
+
+    .panel4{
+        height: 500px;
+    }
+
+    .panel4 #type{
+        width: 37vw;
+    }
+
+    .panel4kiri img{
+        margin-top: 5vw;
+        margin-left: 5vw;
+        height: 30vw;
+        width: 30vw;
+    }
+
+    .panel4kanan #price{
+        margin-bottom: 4vw;
+    }
+
+    .panel4kanan a{
+        margin-left: -10vw;
+    }
+
+
+}

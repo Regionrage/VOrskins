@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to VOrskins</title>
+    <link rel="icon" href="../Images/Website Icons/HomeIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/subscription.css">
+    <script src="../JavaScript/subscription.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbaratas">
+            <a href="../HTML/index.html" class="logo">VOrskins</a>
+        </div>
+        <div class="navbarbawah">
+            <div>
+                <ul>
+                    <li><a class="menu" href="../HTML/index.html">Home</a></li>
+                    <li><a class="menu" href="../HTML/all.html">Products</a></li>
+                    <li><a class="menu" href="../HTML/promotions.html">Promotions</a></li>
+                    <li><a class="curr" href="../HTML/subscription.html">Subscribe</a></li>
+                    <li><a class="menu" href="../HTML/about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="panel1">
+        <div class="background">
+            <div class="title">
+                <p class="titlekiri">Subscribe to our</p>
+                <p class="titlekanan">newsletter</p>
+                <p class="simbol">!</p>
+            </div>
+            <div class="desc">
+                <p>Get notices about new and upcoming exclusive products, ongoing events, and more!</p>
+            </div>
+    
+    
+            <form name="subsform" class="form" action="../HTML/index.html" method="post" onsubmit="return val()">
+                <br>
+                <label class="name" id="atas" for="fullname">Full Name :</label><p class="errormsg" id="errorname"></p>
+                <br>
+                <input id="fullname" type="text" name="fullname" placeholder="Official full name according to your ID card">
+                <br>
+                <br>
+                <label class="mail" id="atas" for="email">E-mail Address :</label><p class="errormsg" id="errormail"></p>
+                <br>
+                <input id="email" type="text" name="email" placeholder="Ex. VOrskinsOfficial@email.com">
+                <br>
+                <br>
+                <label class="num" id="atas" for="phone">Phone Number :</label><p class="errormsg" id="errornum"></p>
+                <br>
+                <input id="phone" type="tel" name="phone" placeholder="Ex. +62 81234567890">
+                <br>
+                <br>
+                <label class="pref">Preferences :</label><p class="errormsg" id="errorrad"></p>
+                <br>
+                <div class="prefe">
+                    <input id="cbody" type="radio" name="prefer" value="body">
+                    <label for="cbody">Body Care</label>
+                    <input id="cskin" type="radio" name="prefer" value="skin">
+                    <label for="cskin">Skin Care</label>
+                    <input id="cboth" type="radio" name="prefer" value="both">
+                    <label for="cboth">Both</label>
+                </div>
+
+                <!-- <input id="cbody" type="radio" name="prefer" value="body">
+                <div class="labelrad"><label for="cbody">Body Care</label></div>
+                <input id="cskin" type="radio" name="prefer" value="skin">
+                <div class="labelrad"><label for="cskin">Skin Care</label></div>
+                <input id="cboth" type="radio" name="prefer" value="both">
+                <div class="labelrad"><label for="cboth">Both</label></div> -->
+
+                <br>
+                <br>
+                <p class="errormsg" id="erroracc"></p>
+                <div class="acc">
+                    <label for="subs"><input type="checkbox" value="agree" name="subs" id="subs">
+                        <p id="topp">I agree to receive newsletter about new products</p>  
+                        <p id="botp">and other announcements</p></label>
+                    <br>
+                </div>
+                <br>
+                <div class="btn"><button id="submitbtn" type="submit">Subscribe</button></div>
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="icon">
+            <a class="cut" href="https://www.instagram.com/"><img src="../Images/Footer/Instagram.png" alt="Instagram"></a>
+            <a class="cut" href="https://www.facebook.com/"><img src="../Images/Footer/Facebook.png" alt="Facebook"></a>
+            <a class="cut" href="https://twitter.com/"><img src="../Images/Footer/Twitter.png" alt="Twitter"></a>
+            <a href="https://www.whatsapp.com/"><img class="right" src="../Images/Footer/Phone.png" alt="Whatsapp"></a>
+        </div>
+        <p class="copyright">Copyright © 2022 VOrskins Digital SEA Pte Ltd</p>
+    </section>
+</body>
+</html>
